@@ -9,9 +9,17 @@ tags:
   - Facebook
   - Graph API
 ---
-## 懸念点
+## survey
+- Facebook Groups API
+  - access token
+    - 管理者・モデレータ・メンバー
+    - 永続化
+  - scope
+  - app review
+    - 開発用/公開用
+  - resource (node - edge)
+- アーカイブのような(簡易？)的なものを実装するのには何がいいか
+  - netlify
+  - Gatsby.js
+  - GAS...(はやだなぁ)?
 
-- 開発者である自分はメンバー
-  - Facebookのprivilegeは仕様上三段階(管理者・モデレータ・メンバー)が存在する
-
--
