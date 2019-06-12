@@ -55,7 +55,7 @@ Facebookの非公開グループ内にしかないコンテンツへのアクセ
 
 ### Page/Group
 
-### Node/Edge 等型
+### [Node/Edge 型]　(https://developers.facebook.com/docs/graph-api/overview)
 [Nodes](https://developers.facebook.com/docs/graph-api/using-graph-api)
 > Reading operations almost always begin with a node. A node is an individual object with a unique ID. ...(中略)... To read a node, you query a specific object's ID.  
 
@@ -71,8 +71,16 @@ latest: Graph API v3.3 release on April 30, 2019
 #### limitation
 > Notice that instead of specifying the Feed edge in the path URL (/user/feed), you specify it in the fields parameter (?fields=feed), which allows you to append the .limit(3) argument.
 
-#### Application level rate limitation
+#### Application level [rate limitation](https://developers.facebook.com/docs/graph-api/overview/rate-limiting)
 > The total number of calls your app can make per hour is 200 times the number of Users. This is not a per User limit. Any individual User can make more than 200 calls per hour, as long as the total for all Users does not exceed the app maximum. For example, if your app has 100 Users, the app can make 20,000 calls per hour. However, your top ten most engaged Users could make 19,000 of those calls.
 
 The number of Users
 > The number of Users for your app is calculated using the number of daily active Users and today's new logins. In cases where there are slow periods of daily usage, the weekly active or even monthly active Users are used to calculate the number of Users for your app. Apps with high daily engagement will have higher rate limits than apps with low daily engagement, regardless of the actual number of app installs.
+
+### Basic Usage
+[Structure](https://developers.facebook.com/docs/graph-api/overview)
+
+> We cover this fully in our Using the Graph API guide, but in general you:
+    use nodes to get data about individual objects
+    use edges to get collections of objects connected to a node, or to publish objects to those collections
+    use fields to specify which data you want included in responses
