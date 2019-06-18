@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: thinkpad a285 kannkyoukoutiku
+title: 'thinkpad a285 '
 date: 2019-06-18T01:53:17.902Z
 description: a
 featuredpost: true
