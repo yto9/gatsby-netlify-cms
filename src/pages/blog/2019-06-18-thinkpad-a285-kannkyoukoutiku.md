@@ -10,6 +10,9 @@ tags:
   - デュアルブート
 ---
 ## SSD換装(128GB -> 1TB)
+今回は購入直後の端末でOSをクリーンインストールするが、lenovoのサポートページを見るとWindowsのライセンスの認証を確認してから吹っ飛ばした方が安全に思える。自分の場合はWindows Storeで購入したOSではなく、lenovoの直販時にpreinstallされたWindows 10 homeなので
+> Before you reinstall Windows 10 make sure that your current version of Windows is activated. Select the Start button, then select Settings > Update & security > Activation. If Windows 10 isn’t activated on your device, see Get help with Windows 10 activation errors for more info. 【引用:[lenovo support](https://support.lenovo.com/jp/en/solutions/ht501288)】
+
 最小のSSDを選択したので以下の画像のSanDiskの128GB SSDが載っていた。
 
 ![](/img/00000img_00000_burst20190616174322515_cover.jpg)
