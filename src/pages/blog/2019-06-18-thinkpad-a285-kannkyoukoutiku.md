@@ -9,4 +9,11 @@ tags:
   - 環境構築
   - デュアルブート
 ---
+## SSD換装(128GB -> 1TB)
+最小のSSDを選択したので以下の画像のSanDiskの128GB SSDが載っていた。
+
+![](/img/00000img_00000_burst20190616174322515_cover.jpg)
+
+これを[WD BLACK](https://www.biccamera.com/bc/item/5110430/)に換装した。
+
 ## Windows 10 + Ubuntu 19.04 dual boot
