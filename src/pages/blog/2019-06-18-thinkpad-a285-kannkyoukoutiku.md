@@ -14,6 +14,7 @@ tags:
 
 ![](/img/00000img_00000_burst20190616174322515_cover.jpg)
 
-これを[WD BLACK](https://www.biccamera.com/bc/item/5110430/)に換装した。
+これを[WD BLACK 1TB](https://www.biccamera.com/bc/item/5110430/)に換装した。
+筐体を開けるときにネジ穴をなめてしまい絶望していたが、[ネジ外し](https://www.amazon.co.jp/gp/product/B002YMJJ4U/ref=ppx_yo_dt_b_asin_title_o03_s00?ie=UTF8&psc=1)を利用することで無事開けることが出来た。
 
 ## Windows 10 + Ubuntu 19.04 dual boot
