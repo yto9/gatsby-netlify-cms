@@ -37,11 +37,37 @@ Python 3.7.3
 
 
 ### (要検証) Pythonの*マイナーバージョン*の指定はvenvでは出来ない？
-virtualenvは以下で指定できる。
+virtualenvでは以下で指定できる。
 ```
 $ virtualenv -p {指定したいpythonのインタプリタへのpath} hoge
 ```
 
-## 環境構築
+## 3系の環境構築
+Python3に紐づくpipとvenvを入れる。
+```
+$ sudo apt install python3-pip
+$ sudo apt install python3-venv
+```
 
-### (要検証) 
+## 確認
+```
+$ python3 -m venv hoge
+
+$ source hoge/bin/activate
+
+(hoge) $ which python
+/{path-to-hoge}/hoge/bin/python
+
+(hoge) $ python --version
+Python 3.7.3
+
+(hoge) $ which pip
+/{path-to-hoge}/hoge/bin/pip
+
+(hoge) $ deactivate
+$
+```
+### (要検証) apt で入れるvirtualenvと挙動違うのかな？
+### (要検証) 仮想環境内でpip使うからpipは必須っぽい？
+### (要検証) 仮想環境内のデフォのpipは外のpipとversionが必ずしも対応していなそう
+### (要検証) apt install / purgeでもとの環境は復元できない？(apt cleanしてなかったからキャッシュが効いてた？)
