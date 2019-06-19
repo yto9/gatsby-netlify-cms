@@ -13,6 +13,15 @@ tags:
 ---
 ## 環境構築
 基本的に[公式](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install-linux.html)に従う。
+
+## [公式](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install-linux.html)に従う
+公式のガイドを読むとAWS SAM CLIのインストール前に、
+- Docker
+- AWS CLI
+のインストールが必須とのこと。
+
+Dockerの環境構築はこちら
+
 ### wheelを最新にする
 awscliのインストール時にSuccessfully installed PyYAML-5.1となっているが、以下のようにerrorを吐いていた。
 ```
