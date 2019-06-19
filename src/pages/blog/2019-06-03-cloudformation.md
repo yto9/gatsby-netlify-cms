@@ -6,6 +6,10 @@ description: cloudformation構築log
 featuredpost: false
 featuredimage: /img/meeting-space.png
 tags:
-  - aws cloudformation s3 lambda
+  - AWS
+  - CloudFormation s3
+  - Lambda
 ---
-hoge
+### CloudFormation SAM
+ 
+## bulk mailer(s3 + Lambda)
