@@ -20,7 +20,24 @@ tags:
 - AWS CLI
 のインストールが必須とのこと。
 
-Dockerの環境構築はこちら
+### Dockerの環境構築
+2019/06/20現在、[disco向けのstableのrepoはない](https://github.com/docker/for-linux/issues/533)ので[cosmic](https://docs.docker.com/install/linux/docker-ce/ubuntu/)向けのものを利用する。[Docker ce 19.03のリリースと共にdiscoがサポートされる](https://github.com/docker/for-linux/issues/533#issuecomment-485914608)ようなのでそしたら貼り替える予定。
+
+[こちら](https://docs.docker.com/install/linux/docker-ce/ubuntu/)の手順に従い、
+以下の部分のみ
+```
+$ sudo add-apt-repository \
+   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   $(lsb_release -cs) \
+   stable"
+```
+cosmicを見るように変更。
+```
+$ sudo add-apt-repository \
+   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   cosmic \
+   stable"
+```
 
 ### AWS CLIのインストール
 #### wheelを最新にする
