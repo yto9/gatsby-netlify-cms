@@ -14,7 +14,7 @@ tags:
 ## 環境構築
 基本的に[公式](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install-linux.html)に従う。
 
-## [公式](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install-linux.html)に従う
+### 事前準備
 公式のガイドを読むとAWS SAM CLIのインストール前に、
 - Docker
 - AWS CLI
@@ -22,7 +22,8 @@ tags:
 
 Dockerの環境構築はこちら
 
-### wheelを最新にする
+### AWS CLIのインストール
+#### wheelを最新にする
 awscliのインストール時にSuccessfully installed PyYAML-5.1となっているが、以下のようにerrorを吐いていた。
 ```
 Collecting six>=1.5 (from python-dateutil<3.0.0,>=2.1; python_version >= "2.7"->botocore==1.12.172->awscli)
@@ -58,4 +59,22 @@ Installing collected packages: wheel
 Successfully installed wheel-0.33.4
 
 ```
+#### awscliのインストール
+[公式のガイド](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html)を参照し、
+```
+$ pip install --upgrade awscli
+```
+先のwheelを最新にすることで、エラーなくawsコマンドがインストールされたことが確認できた。
+```
+$ aws --v
+aws-cli/1.16.182 Python/3.7.3 Linux/5.0.0-17-generic botocore/1.12.172
+```
 
+### SAMコマンドのインストール
+こちらはすんなり以下で入った。
+```
+$ pip install aws-sam-cli
+$ sam --version
+SAM CLI, version 0.17.0
+
+```
