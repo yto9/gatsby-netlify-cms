@@ -39,6 +39,9 @@ $ sudo add-apt-repository \
    stable"
 ```
 
+#### (optional)dockerをsudoなしで利用する
+https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04
+
 ### AWS CLIのインストール
 #### wheelを最新にする
 awscliのインストール時にSuccessfully installed PyYAML-5.1となっているが、以下のようにerrorを吐いていた。
