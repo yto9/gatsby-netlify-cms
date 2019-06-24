@@ -42,6 +42,14 @@ $ sudo add-apt-repository \
 #### (optional)dockerをsudoなしで利用する
 https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04
 
+### docker-composeのインストール
+[ここの](https://www.digitalocean.com/community/tutorials/how-to-install-docker-compose-on-ubuntu-18-04)ステップ１ \
+以下のエラーが出たが、再ダウンロードすることで解決した。(ダウンロードが途中で失敗していたのか)
+```
+$ docker-compose --version
+Cannot open self /usr/bin/docker-compose or archive /usr/bin/docker-compose.pkg
+```
+
 ### AWS CLIのインストール
 #### wheelを最新にする
 awscliのインストール時にSuccessfully installed PyYAML-5.1となっているが、以下のようにerrorを吐いていた。
