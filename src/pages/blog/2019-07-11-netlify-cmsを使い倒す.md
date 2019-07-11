@@ -2,7 +2,8 @@
 templateKey: blog-post
 title: Netlify CMSを使い倒す
 date: 2019-07-11T08:18:02.446Z
-description: Netlify CMSを使い込んでいく記録
+description: |
+  Netlify CMSを使い込んでいく記録
 featuredpost: true
 featuredimage: /img/apple-touch-icon.png
 tags:
