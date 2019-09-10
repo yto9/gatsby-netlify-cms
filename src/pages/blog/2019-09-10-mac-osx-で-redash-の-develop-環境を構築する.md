@@ -36,7 +36,9 @@ $ git --version
 #### (node.js未インストールの場合)node.jsをインストールする
 ```sh
 $ brew install node
+$ node -v
 ```
+インストールされたnodeのバージョンが表示される。
 
 ### (Docker未インストールの場合)Docker Composeのインストール
 [Docker comuntiyのforum](https://forums.docker.com/t/installation-docker-toolbox-vs-docker-desktop-mac-mojave/72320)によると[ここ](https://docs.docker.com/docker-for-mac/install/)のrequirementsを満たしている場合はDocker for Mac、そうでない場合にDocker Toolboxを利用することが推奨されている。
