@@ -15,7 +15,7 @@ tags:
 ---
 ## Macでの環境構築
 以下の`$`から始まる行はシェルコマンドを想定しているのでそれぞれ$を除き、`Terminal`上で実行する。
-### Homebrew
+### (Homebrew未インストールの場合) Homebrewのインストール
 #### install (cf.[Homebrew公式](https://brew.sh/))
 ```sh
 $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -26,6 +26,14 @@ $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/inst
 $ brew -v
 ```
 インストールされたHomebrewのバージョンが表示される。
+#### (git未インストールの場合)gitをインストールする
+```sh
+$ brew update
+$ brew install git
+$ git --version
+```
+インストールされたgitのバージョンが表示される。
+
 ### (Docker未インストールの場合)Docker Composeのインストール
 [Docker comuntiyのforum](https://forums.docker.com/t/installation-docker-toolbox-vs-docker-desktop-mac-mojave/72320)によると[ここ](https://docs.docker.com/docker-for-mac/install/)のrequirementsを満たしている場合はDocker for Mac、そうでない場合にDocker Toolboxを利用することが推奨されている。
 #### 確認
