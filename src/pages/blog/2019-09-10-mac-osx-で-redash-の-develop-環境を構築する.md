@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: Mac OSX で Redash の develop 環境を構築する
 date: 2019-09-10T01:19:11.859Z
-description: 'Ubuntu 上で用意したDocker Compose '
+description: 'Redashの公式サイトにあるDockerを利用した環境構築をUbuntu, Mac OSで実践する。'
 featuredpost: true
 featuredimage: /img/jumbotron.jpg
 tags:
