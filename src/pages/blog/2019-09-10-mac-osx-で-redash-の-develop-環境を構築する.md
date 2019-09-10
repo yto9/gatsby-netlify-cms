@@ -26,5 +26,23 @@ $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/inst
 $ brew -v
 ```
 インストールされたHomebrewのバージョンが表示される。
-### Docker Composeのインストール
-#### Docker環境構築
+### (Docker未インストールの場合)Docker Composeのインストール
+[Docker comuntiyのforum](https://forums.docker.com/t/installation-docker-toolbox-vs-docker-desktop-mac-mojave/72320)によると[ここ](https://docs.docker.com/docker-for-mac/install/)のrequirementsを満たしている場合はDocker for Mac、そうでない場合にDocker Toolboxを利用することが推奨されている。
+#### 確認
+Docker Toolboxによる環境変数がセットされていないことを確認する。
+```
+$ env | grep DOCKER
+```
+なにも返ってこなければ問題なし。[参考](https://docs.docker.com/docker-for-mac/docker-toolbox/)
+
+
+#### Docker for Macの環境構築
+[Docker hub](https://hub.docker.com/editions/community/docker-ce-desktop-mac)からDockerのアカウントを作成し、インストーラ(Docker.dmg)をダウンロード。
+
+#### Dockerの起動
+インストーラを起動し、インストールに成功すると``/Applications``にDockerが入るので`LaunchPad`からDockerを起動する。(PCのuserのpasswordを聞かれる(先程作ったDockerのpasswordではない))
+#### 確認
+```
+$ docker version
+```
+動いているDockerのclient/server側のバージョンが表示される。
