@@ -1,6 +1,5 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import './all.sass'
 import useSiteMetadata from './SiteMetadata'
@@ -21,14 +20,14 @@ const TemplateWrapper = ({ children }) => {
         />
         <link
           rel="icon"
-          type="image/png"
-          href="/img/favicon-32x32.png"
+          type="image/jpg"
+          href="/img/icon.jpg"
           sizes="32x32"
         />
         <link
           rel="icon"
-          type="image/png"
-          href="/img/favicon-16x16.png"
+          type="image/jpg"
+          href="/img/icon.png"
           sizes="16x16"
         />
 
@@ -46,7 +45,6 @@ const TemplateWrapper = ({ children }) => {
       </Helmet>
       <Navbar />
       <div>{children}</div>
-      <Footer />
     </div>
   )
 }
