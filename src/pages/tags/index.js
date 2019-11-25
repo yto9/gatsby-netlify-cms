@@ -51,7 +51,7 @@ export const tagPageQuery = graphql`
       group(field: frontmatter___tags) {
         fieldValue
         totalCount
-      }
+      },
     }
   }
 `
