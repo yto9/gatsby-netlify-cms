@@ -17,40 +17,13 @@ tags:
 このCTFを通してGitのオブジェクト管理について詳しくなった。`.git `からgit flowを復元する問題は楽しかった。
 
 ## WEB
-### The Magic WordWeb (20pts, 1371/1782)
-#### 問題
-> Ask and you shall receive...that is as long as you use the magic word.
-> Change "give flag" to "please give flag" somehow.
+### The Magic WordWeb 
+
 #### 解法
-これはヒントが全てで言われた通りに`give flag`と表示している部分をブラウザのdev toolで`please give flag`に書き換えるとflagがゲットできる。\
-一応順を追って考えてみると以下のソースをみる。
-```html
-<div>
-    <div class="flexmagic">
-        <p id="magic">give flag</p>
-    </div>
-</div>
-<div>
-    <p class="hidden">you passed it chief</p>
-</div>
-<script>
-    var msg = document.getElementById("magic");
-    setInterval(function() {
-        if (magic.innerText == "please give flag") {
-            fetch("/flag?msg=" + encodeURIComponent(msg.innerText))
-                .then(res => res.text())
-                .then(txt => magic.innerText = txt.split``.map(v => String.fromCharCode(v.charCodeAt(0) ^ 0xf)).join``);
-        }
-    }, 1000);
-</script>
 
-```
-1s毎にif文内が呼び出されている。(ref. [setInterval()](https://developer.mozilla.org/ja/docs/Web/API/Window/setInterval))
-
-ここで一つ気になることを見つけた。`magic`と`msg`の二つが存在している。\
-`msg`は[document.getElementById()](https://developer.mozilla.org/ja/docs/Web/API/Document/getElementById)経由で取得したElementなのはわかるが、`magic`は宣言が存在しない、未定義にならないのだろうかと言うことである。実際にconsoleで挙動を見てみると`msg`と同じくid='magic'のElementが取得されているが、どのような機構なのか気になったので調べてみた(これが可能なら`getElementById(#id)`とかjqueryの`$(#id)`セレクタとか要らないのでは。。。
-
-
+### Xmas Still Stands (50pts, solved: 489/1782)
+#### 問題
+> You remember when I said I dropped clam's tables? Well that was on Xmas day. And because I ruined his Xmas, he created the Anti Xmas Warriors to try to ruin everybody's Xmas. Despite his best efforts, Xmas Still Stands. But, he did manage to get a flag and put it on his site. Can you get it?
 ## CRYPTO
 ## MISC
 ### Sanity Check (5pts, solved: 1029/1782)
