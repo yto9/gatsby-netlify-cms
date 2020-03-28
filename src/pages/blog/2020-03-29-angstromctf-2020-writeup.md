@@ -48,7 +48,7 @@ tags:
 1s毎にif文内が呼び出されている。(ref. [setInterval()](https://developer.mozilla.org/ja/docs/Web/API/Window/setInterval))
 
 ここで一つ気になることを見つけた。`magic`と`msg`の二つが存在している。\
-`msg`は[document.getElementById()](https://developer.mozilla.org/ja/docs/Web/API/Document/getElementById)経由で取得したElementなのはわかるが、`magic`は宣言が存在しない、未定義にならないのだろうかと言うことである。実際にconsoleで挙動を見てみると`msg`と同じくid='magic'のElementが取得されているが、どのような機構なのか気になったので調べてみた(これが可能なら`getElementById()`とかjqueryの`$(#id)`セレクタとか要らないのでは。。。
+`msg`は[document.getElementById()](https://developer.mozilla.org/ja/docs/Web/API/Document/getElementById)経由で取得したElementなのはわかるが、`magic`は宣言が存在しない、未定義にならないのだろうかと言うことである。実際にconsoleで挙動を見てみると`msg`と同じくid='magic'のElementが取得されているが、どのような機構なのか気になったので調べてみた(これが可能なら`getElementById(#id)`とかjqueryの`$(#id)`セレクタとか要らないのでは。。。
 
 
 ## CRYPTO
